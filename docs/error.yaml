@@ -1,0 +1,131 @@
+
+
+UnknownError:
+  code: 1
+  message: "Unknown Error"
+  wording: "服务器开小差了"
+
+# 参数错误
+# 1000 - 1999
+
+InvalidParameter:
+  code: 1001
+  message: "Invalid Parameter"
+  wording: "服务器开小差了"
+
+InvalidSignature:
+  code: 1002
+  message: "Invalid Signature"
+  wording: "服务器开小差了"
+
+# 用户相关错误
+# 2000 - 2999
+Unauthorized:
+  code: 2001
+  message: "Unauthorized"
+  wording: "请先登录"
+
+DeviceEnrollmentFailed:
+  code: 2002
+  message: "Device Enroolment Failed"
+  wording: "设备注册失败"
+
+SingupFailed:
+  code: 2003
+  message: "SingupFailed"
+  wording: "注册失败"
+
+LoginFailed:
+  code: 2004
+  message: "LoginFailed"
+  wording: "登录失败，请重试"
+
+LoginCodeSMSOverLimit:
+  code: 2005
+  message: "Login Code SMS Over Limit"
+  wording: "您获取验证码太频繁了，请稍后重试"
+
+InvalidLoginCode:
+  code: 2006
+  message: "Invalid Login Code"
+  wording: "验证码错误，请重新输入"
+
+LoginCodeSMSTooOften:
+  code: 2007
+  message: "Login Code SMS Too Often"
+  wording: "您获取验证码太频繁了，请稍后重试"
+
+UserIsBanned:
+  code: 2008
+  message: "User Is Banned"
+  wording: "您被禁止登陆"
+
+NonExistentChild:
+  code: 2102
+  message: "Non-existent Child"
+  wording: "孩子不存在"
+
+NonExistentCarer:
+  code: 2103
+  message: "Non-existent Carer"
+  wording: "家庭老师不存在"
+
+NonExistentGuardian:
+  code: 2104
+  message: "Non-existent Guardian"
+  wording: "监护人不存在"
+
+CreateChildFailed:
+  code: 2105
+  message: "Create Child Failed"
+  wording: "孩子添加失败"
+
+CreateGuardianFailed:
+  code: 2106
+  message: "Create Guardian Failed"
+  wording: "监护人添加失败"
+
+InvalidIDCardNumber:
+  code: 2201
+  message: "Invalid ID Card Number"
+  wording: "请填写正确的身份证信息"
+
+IDCardNumberVerificationFailed:
+  code: 2202
+  message: "ID Card Number Verification Failed"
+  wording: "请填写正确的身份证信息"
+
+LivenessVerificationFailed:
+  code: 2203
+  message: "Liveness Verification Failed"
+  wording: "活体认证失败"
+
+IDCardNumberAlreadyExisted:
+  code: 2204
+  message: "ID Card Number Already Existed"
+  wording: "身份证号码已存在"
+
+IDCardNumberOrRealnameAlreadyExisted:
+  code: 2205
+  message: "ID Card Number Or Realname Already Existed"
+  wording: "身份证号码或真实姓名已经存在"
+
+CarerApplicationSubmitFailed:
+  code: 2301
+  message: "Carer Application Submit Failed"
+  wording: "提交失败"
+
+CarerApplicationIdentityNotVerified:
+  code: 2302
+  message: "Carer Application Realname Not Identified"
+  wording: "实名认证未通过"
+
+CarerApplicationAlreadyApplied:
+  code: 2303
+  message: "Carer Application Already Applied"
+  wording: "家庭老师申请已提交"
+
+NonExistentCarerApplication:
+  code: 2304
+  message: "Non-existent Carer Application"
+  wording: "家庭老师申请不存在"

@@ -1,0 +1,55 @@
+# morer RELEASE config
+
+[mysql]
+    host = "47.94.101.97"
+    port = 3306
+    user = "db"
+    password = "MoreAf_3f+X8_3hO"
+    database = "moremom"
+    params = "charset=utf8mb4"
+
+[redis]
+host = "localhost"
+port = "6379"
+password = ""
+db = 0
+
+[qiniu]
+access_key = "BKFTMpPqeaVswI6OPOuTNLJn-PGXq_ZMvwujaLpn"
+secret_key = "9IEQGeKHveIBzhpz4swtU_4qLiCNOlNJWNfvVS34"
+
+[qiniu.bucket]
+    [qiniu.bucket.image-avatar-test]
+        url = "http://pam42puiu.bkt.clouddn.com"
+    [qiniu.bucket.image-vframe-test]
+        url = "http://pam4xs0yq.bkt.clouddn.com"
+    [qiniu.bucket.image-birth-cert-test]
+        url = "http://pam4474sz.bkt.clouddn.com"
+    [qiniu.bucket.image-identity-test]
+        url = "http://pam48ino0.bkt.clouddn.com"
+    [qiniu.bucket.video-mp4-test]
+        url = "http://pam46uk5h.bkt.clouddn.com"
+    [qiniu.bucket.video-origin-test]
+        url = "http://pam4if52s.bkt.clouddn.com"
+
+[qiniu.category]
+    [qiniu.category.avatar]
+        bucket = "image-avatar-test"
+    [qiniu.category.vframe]
+        bucket = "image-vframe-test"
+    [qiniu.category.birth]
+        bucket = "image-birth-cert-test"
+    [qiniu.category.identity]
+        bucket = "image-identity-test"
+    [qiniu.category.video]
+        bucket = "video-mp4-test"
+
+[celery]
+    broker_url = "redis://localhost:6379/0"
+    result_backend = "redis://localhost:6379/0"
+    task_serializer = "json"
+    result_serializer = "json"
+    accept_content = ["json"]
+    result_expires = 3600
+    task_ignore_result = true
+    worker_redirect_stdouts_level = "INFO"
